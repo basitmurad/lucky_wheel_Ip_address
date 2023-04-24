@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+
+
+    tools:context=".activities.IndianActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+
+        android:layout_marginBottom="80dp"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:id="@+id/firstNo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+
+            android:background="@drawable/back_2"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+
+            android:text="First Number"
+            android:textColor="#FF5722"
+
+            android:textSize="18sp"
+
+            />
+
+        <TextView
+            android:id="@+id/secondNo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="@drawable/back_2"
+            android:fontFamily="@font/poppins_semibold"
+
+
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Second Number"
+
+
+            android:textColor="#FF5722"
+
+            android:textSize="18sp"
+
+
+            />
+    </LinearLayout>
+    <!--    </androidx.cardview.widget.CardView>-->
+
+
+    <ImageView
+        android:id="@+id/wheel"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/wheel" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="6dp"
+
+
+        android:background="@drawable/back_2"
+        android:text="Spin"
+        android:textColor="#FF5722"
+        android:textSize="16sp"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+</LinearLayout>

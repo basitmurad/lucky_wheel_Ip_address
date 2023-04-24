@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EBE9ED"
+    android:layout_gravity="center"
+    tools:context=".activities.WebviewActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:id="@+id/cardView"
+
+        app:cardCornerRadius="20dp"
+        app:cardElevation="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:padding="5dp"
+
+            >
+
+
+               <androidx.appcompat.widget.AppCompatButton
+                   android:id="@+id/btnTwitter"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+
+android:layout_marginBottom="10dp"
+
+                   android:drawableLeft="@drawable/twitter"
+
+                   android:paddingStart="60dp"
+                   android:background="@drawable/back_2"
+                   android:backgroundTint="#2196F3"
+                   android:text="Twitter"
+
+                   android:textColor="@color/white"
+                   android:textSize="16sp"
+                   android:textStyle="bold"
+
+
+
+                   />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnGoogle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/back_2"
+                android:backgroundTint="#384695"
+                android:text="Google"
+                android:paddingStart="60dp"
+                android:paddingEnd="20dp"
+                android:drawableLeft="@drawable/google"
+                android:padding="0dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
